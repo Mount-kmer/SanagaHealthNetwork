@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    /*background-image: url("https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3070&q=80");*/
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+
+.header{
+    padding:30px;
+    text-align: center;
+    height: 20%;
+}
+.header,h1{
+    font-size: 50px;
+}
+
+
+
+.sanaga-card{
+    padding: 70px;
+    margin-top: 60px;
+    /*background: white;*/
+    border-radius: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    /*border: 1px solid whitesmoke;*/
+}
+
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-01{
+    float: left;
+    width: 100%;
+
+    /*column-count: 2;*/
+}
+
+
+
+button{
+    font-size: 16px;
+    padding: 17px 28px;
+    cursor: pointer;
+    /*background-color: blue;*/
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 3px solid whitesmoke;
+    color: white;
+    /*width: 100%;*/
+}
+
+input[type=text], input[type=password],input[type=password]{
+    padding: 14px 28px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    width: 100%;
+    display: block;
+}
+
+
+input[type=submit]{
+    padding: 17px 28px;
+    /*background-color: blue;*/
+    /*color: white;*/
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 3px solid whitesmoke;
+}
+
+.content{
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    /*padding: 10px;*/
+}
+
+
+@media screen and (max-width: 1000px) {
+    .column-01{
+        width: 100%;
+        text-align: center;
+        margin-left: -30px;
+    }
+
+    input[type=text], input[type=email],input[type=password]{
+        padding: 17px 6px;
+        border: 3px solid black;
+        width: 100%;
+    }
+    /*img{*/
+    /*    width:130%*/
+    /*}*/
+    h1{
+        font-size: 22px;
+    }
+
+    .sanaga-card{
+        width: 100%;
+        border-radius: 12px;
+    }
+    button{
+    }
+
+}
+
+@media screen  and (max-width: 375px){
+    .nav-bar{
+        float: none;
+        width: 100%;
+    }
+}

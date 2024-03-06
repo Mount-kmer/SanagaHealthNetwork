@@ -1,0 +1,74 @@
+
+:root {
+    color-scheme: dark light;
+
+    /* destructure brand channels */
+    --hue: 200; /* change me!! */
+    --saturation: 100%;
+    --lightness: 50%;
+
+    /* build colors with props */
+    --brand: hsl(
+            var(--hue)
+            var(--saturation)
+            var(--lightness)
+    );
+
+    /* very dark brand blue */
+    --text: hsl(
+            var(--hue)
+            var(--saturation)
+            10% /* lower is darker */
+    );
+
+    /* very bright brand white */
+    --surface: hsl(
+            var(--hue)
+            calc(var(--saturation) / 2)
+            95% /* higher is lighter */
+    );
+}
+
+h1{
+    color: hsl(
+            var(--hue)
+            var(--saturation)
+            30%
+    );
+}
+p{
+    text-align: center;
+
+}
+
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr ));
+    grid-gap: 1em;
+}
+
+.card-item {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.practice {
+    color: grey;
+
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: cornflowerblue;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
